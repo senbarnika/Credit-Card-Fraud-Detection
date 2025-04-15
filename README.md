@@ -1,6 +1,7 @@
 # Credit-Card-Fraud-Detection
 
-Detecting fraudulent credit card transactions using advanced machine learning techniques, emphasizing data imbalance handling and model interpretability.
+Detecting fraudulent credit card transactions using advanced machine learning techniques, emphasizing data imbalance handling and model interpretability.</br>
+
 ![image](https://github.com/user-attachments/assets/91278b78-99ee-49ef-8010-0b7f051ece8f)
 
 🔍 Overview

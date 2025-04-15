@@ -8,6 +8,14 @@ Detecting fraudulent credit card transactions using advanced machine learning te
 
 Credit card fraud is a significant issue affecting millions of users worldwide. This project applies machine learning to identify fraudulent transactions from real-world anonymized financial data. Special care has been taken to address class imbalance, a critical challenge in fraud detection.
 
+⚙️ Algorithms Used in the Project
+
+The project employs the following machine learning algorithms for credit card fraud detection:​
+
+Logistic Regression: A linear model used for binary classification, predicting the probability of a transaction being fraudulent.​</br>
+Random Forest: An ensemble learning method that constructs multiple decision trees during training and outputs the mode of the classes for classification tasks.​​</br>
+Decision Tree: A flowchart-like structure where each internal node represents a feature (or attribute), each branch represents a decision rule, and each leaf node represents the outcome.​​</br>
+
 🚀 Project Highlights
 
 ✅ Real-world dataset from Kaggle (highly imbalanced)</br>

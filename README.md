@@ -26,7 +26,7 @@ A granular examination of the data reveals significant differences in transactio
 | **Min Amount** | $0.00 | $0.00 |
 | **Max Amount** | $2125.87 | $25691.16 |
 
-This table clearly indicates that while the mean fraudulent transaction amount is higher, there's a wider range in valid transaction values.
+This table clearly indicates that while the mean fraudulent transaction amount is higher, there's a wider range in valid transaction values.<br>
 
 🛠️ **Data Engineering and Preprocessing** </br>
 
@@ -39,21 +39,26 @@ This table clearly indicates that while the mean fraudulent transaction amount i
 4) Class Imbalance Mitigation: The Synthetic Minority Over-sampling Technique (SMOTE) was applied to generate synthetic data points for the minority class (fraudulent transactions), thereby creating a balanced training dataset. This step is critical for preventing the model from being biased toward the majority class.</br>
 
 🤖 **Model Implementation and Evaluation**</br>
+
 A robust Random Forest Classifier was selected as the primary modeling algorithm due to its proven performance in handling complex, high-dimensional datasets. The model was trained on the preprocessed data and its performance was rigorously evaluated using a suite of metrics.</br>
 
 📈 **Exploratory Data Analysis**</br>
 
 Class Distribution: Visualized the imbalance between fraudulent and non-fraudulent transactions.</br>
+
 Correlation Analysis: Examined correlations between features to identify potential multicollinearity.</br>
+
 Feature Distributions: Plotted distributions to understand feature behavior.</br>
 
 🤯 **Modeling**</br>
 
 Implemented and compared the following machine learning algorithms:
 
-Logistic Regression</br>
-Decision Tree Classifier</br>
-Random Forest Classifier</br>
+| Algorithm | Strengths | Weaknesses | Performance in Project |
+| :--- | :--- | :--- | :--- |
+| **Random Forest Classifier** | An **ensemble model** that reduces overfitting and improves accuracy by combining multiple decision trees. | Less interpretable and more computationally expensive. | **Achieved the highest F1-Score**, effectively balancing precision and recall, making it the most suitable model for this task. |
+| **Logistic Regression** | Computationally efficient and highly interpretable. Serves as a strong linear **baseline model**. | Performance is limited with non-linear relationships and can be outperformed by complex models. | Performed well as a baseline but couldn't capture the complex, non-linear patterns that Random Forest could. |
+| **Decision Tree Classifier** | Highly interpretable and visually intuitive. Can model complex, **non-linear patterns**. | Prone to **overfitting** and can be unstable. | Likely had high accuracy but a higher rate of false positives and/or false negatives compared to the ensemble model. |
 
 *Each model was trained on the balanced dataset obtained after applying SMOTE.*
 
@@ -61,11 +66,13 @@ Random Forest Classifier</br>
 
 Evaluated model performance using the following metrics:
 
-Confusion Matrix: To visualize true vs. predicted classifications.</br>
-Precision: Measures the accuracy of positive predictions.</br>
-Recall: Measures the ability to find all positive instances.</br>
-F1-Score: Harmonic mean of precision and recall.</br>
-ROC Curve: Illustrates the diagnostic ability of the binary classifier.</br>
+| Metric | Description |
+| :--- | :--- |
+| **Confusion Matrix** | A table used to visualize the performance of a classification model. It shows the number of correct and incorrect predictions for each class. |
+| **Precision** | Measures the accuracy of positive predictions. It answers: "Of all the positive predictions, how many were correct?" |
+| **Recall** | Measures the model's ability to find all positive instances. It answers: "Of all the actual positive instances, how many were correctly identified?" |
+| **F1-Score** | The harmonic mean of Precision and Recall. It provides a single score that balances both metrics, especially useful for imbalanced datasets. |
+| **ROC Curve** | A graph illustrating the diagnostic ability of a binary classifier system as its discrimination threshold is varied. |
 
 *Emphasis was placed on minimizing false negatives to ensure fraudulent transactions are not overlooked.*
 

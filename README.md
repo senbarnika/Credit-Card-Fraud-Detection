@@ -2,7 +2,9 @@
 
 This project addresses the critical challenge of credit card fraud detection by leveraging advanced machine learning techniques to build a robust classification model. Given the highly skewed nature of financial transaction datasets, this initiative prioritizes a meticulous approach to data preprocessing and a rigorous evaluation framework to ensure the reliable identification of fraudulent activities.</br>
 
-<img width="1408" height="736" alt="Gemini_Generated_Image_ry524hry524hry52" src="https://github.com/user-attachments/assets/b439fbe1-2188-489d-9465-5c4c8e8f5927" />
+<img width="1408" height="736" alt="Gemini_Generated_Image_m385a0m385a0m385" src="https://github.com/user-attachments/assets/560b36d6-83f5-4bba-a4ab-8fb91a7c8633" /> </br>
+
+
 
 🎯 **Project Objectives** </br>
 
